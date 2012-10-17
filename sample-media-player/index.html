@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title></title>
-  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
-    <meta charset="utf-8">
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </head>
-  <body>
-    <h1>Media Player</h1>
-    <button id="buttonPlayAudio">Play</button>
-    <button id="buttonStopAudio">Pause</button>
-    <button id="buttonPauseAudio">Stop</button>
-  </body>
+	<head>
+		<title>Media Player</title>
+		<link rel="stylesheet" href="styles/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+		<meta charset="utf-8">
+
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
+	</head>
+	<body>
+		<header class="header">
+            <h1>Recorder</h1>
+        </header>
+		<div class="content">
+            <button class="button big" id="buttonPlayAudio">Play</button>
+    		<button class="button" id="buttonPauseAudio">Pause</button>
+    		<button class="button" id="buttonStopAudio">Stop</button>
+            
+            <hr class="horizontalLine" />
+        
+            <div id="result"></div>
+        </div>
+		<footer class="footer">
+            <div>Cordova API Samples</div>
+        </footer>
+	</body>
 </html>

@@ -1,84 +1,84 @@
 document.addEventListener("deviceready", onDeviceReady, false);
-document.addEventListener("touchstart", function() {},false);
+document.addEventListener("touchstart", function() {}, false);
 
 var mediaPlayer;
 
 function onDeviceReady() {
-    mediaPlayer = new MediaPlayer();
-    mediaPlayer.run();
+	mediaPlayer = new MediaPlayer();
+	mediaPlayer.run();
 }
-
 
 function MediaPlayer() {
 }
 
 MediaPlayer.prototype = {
 	mediaContent : null,
-    isPlaying : false,
-    run: function() {
-        var src = "http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3",
-            that = this;
+	isPlaying : false,
+    
+	run: function() {
+		var src = "http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3",
+		that = this;
         
-        var playAudioButton = document.getElementById("buttonPlayAudio"),
-    	stopAudioButton = document.getElementById("buttonStopAudio"),
-    	pauseAudioButton = document.getElementById("buttonPauseAudio");
+		var playAudioButton = document.getElementById("buttonPlayAudio"),
+		stopAudioButton = document.getElementById("buttonStopAudio"),
+		pauseAudioButton = document.getElementById("buttonPauseAudio");
                                 
 		playAudioButton.addEventListener("click",
 										 function() {
-											 that.play.apply(that, arguments)
+											 that._play.apply(that, arguments)
 										 }); 
 		
-        stopAudioButton.addEventListener("click", 
+		stopAudioButton.addEventListener("click", 
 										 function() {
-											 that.stop.apply(that, arguments)
+											 that._stop.apply(that, arguments)
 										 });
 		
-        pauseAudioButton.addEventListener("click", 
+		pauseAudioButton.addEventListener("click", 
 										  function() {
-											  that.pause.apply(that, arguments)
+											  that._pause.apply(that, arguments)
 										  });
         
-        that.mediaContent = new Media(src, 
-                                    function() {
-                                        that._onMediaSuccess.apply(that, arguments);
-                                    },
-                                    function() {
-                                        that._onError.apply(that, arguments);
-                                    });
-    },
+		that.mediaContent = new Media(src, 
+									  function() {
+										  that._onMediaSuccess.apply(that, arguments);
+									  },
+									  function() {
+										  that._onError.apply(that, arguments);
+									  });
+	},
     
-    _onMediaSuccess: function() {
-        if(!isPlaying) {
-            this.mediaContent.release();
-            this.showMessage("");
-        }
+	_onMediaSuccess: function() {
+		if (!this.isPlaying) {
+			this.mediaContent.release();
+			this._showMessage("");
+		}
 	},
     
 	_onError: function(error) {
 		var errorMessage = "code: " + error.code + "\n" +
 						   "message: " + error.message + "\n";
-        this.showMessage(errorMessage);
+		this._showMessage(errorMessage);
 	},
     
-	play: function() {
-        this.mediaContent.play();
-        this.showMessage('Playing...');
-        isPlaying = true;
+	_play: function() {
+		this.mediaContent.play();
+		this._showMessage('Playing...');
+		this.isPlaying = true;
 	},
     
-	pause: function () {
-        this.mediaContent.pause();
-        this.showMessage('Paused');
+	_pause: function () {
+		this.mediaContent.pause();
+		this._showMessage('Paused');
 	},
     
-	stop: function () {
-        this.mediaContent.stop();
-        this.showMessage('');
-        isPlaying = false;
+	_stop: function () {
+		this.mediaContent.stop();
+		this._showMessage('');
+		this.isPlaying = false;
 	},
     
-    showMessage: function(text) {
-        var statusBox = document.getElementById('result');
+	_showMessage: function(text) {
+		var statusBox = document.getElementById('result');
 		statusBox.innerText = text;
-    }
+	}
 }

@@ -1,4 +1,5 @@
 document.addEventListener("deviceready", onDeviceReady, false);
+//Fix :active state on device
 document.addEventListener("touchstart", function() {}, false);
 
 var mediaPlayer;
@@ -16,12 +17,13 @@ MediaPlayer.prototype = {
 	isPlaying : false,
     
 	run: function() {
-		var src = "http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3",
-		that = this;
+		var that = this,
+            src = "http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3";
+		    
         
 		var playAudioButton = document.getElementById("buttonPlayAudio"),
-		stopAudioButton = document.getElementById("buttonStopAudio"),
-		pauseAudioButton = document.getElementById("buttonPauseAudio");
+    		stopAudioButton = document.getElementById("buttonStopAudio"),
+    		pauseAudioButton = document.getElementById("buttonPauseAudio");
                                 
 		playAudioButton.addEventListener("click",
 										 function() {

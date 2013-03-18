@@ -32,7 +32,7 @@ MediaPlayer.prototype = {
 		
 		stopAudioButton.addEventListener("click", 
 										 function() {
-											 that._stop.apply(that, arguments)
+											 that._stop.apply(that, arguments) 
 										 });
 		
 		pauseAudioButton.addEventListener("click", 
@@ -46,26 +46,35 @@ MediaPlayer.prototype = {
 									  },
 									  function() {
 										  that._onError.apply(that, arguments);
-									  });
+									  },
+                                      function() {
+                                          that._onMediaStatusChanged.apply(that, arguments);
+                                      });
 	},
     
 	_onMediaSuccess: function() {
-		if (!this.isPlaying) {
-			this.mediaContent.release();
-			this._showMessage("");
-		}
+		console.log("mediaSuccess");
 	},
     
 	_onError: function(error) {
 		var errorMessage = "code: " + error.code + "\n" +
 						   "message: " + error.message + "\n";
 		this._showMessage(errorMessage);
+        this.isPlaying = false;
 	},
     
+    _onMediaStatusChanged: function(status) {
+        if(status === Media.MEDIA_STOPPED) {
+            this.mediaContent.release();
+        }  
+    },
+    
 	_play: function() {
-		this.mediaContent.play();
-		this._showMessage('Playing...');
-		this.isPlaying = true;
+        if(this.isPlaying === false) {
+            this.mediaContent.play();
+		    this._showMessage('Playing...');
+		    this.isPlaying = true;
+        }
 	},
     
 	_pause: function () {

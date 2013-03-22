@@ -5,6 +5,7 @@ document.addEventListener("touchstart", function() {}, false);
 var mediaPlayer;
 
 function onDeviceReady() {
+    navigator.splashscreen.hide();
 	mediaPlayer = new MediaPlayer();
 	mediaPlayer.run();
 }
@@ -78,12 +79,15 @@ MediaPlayer.prototype = {
 	},
     
 	_pause: function () {
-		this.mediaContent.pause();
-		this._showMessage('Paused');
+		if(this.isPlaying === true) {
+            this.mediaContent.pause();
+    		this._showMessage('Paused');
+            this.isPlaying = false;
+        }
 	},
     
 	_stop: function () {
-		this.mediaContent.stop();
+        this.mediaContent.stop();
 		this._showMessage('');
 		this.isPlaying = false;
 	},

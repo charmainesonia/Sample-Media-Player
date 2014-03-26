@@ -57,11 +57,18 @@ MediaPlayer.prototype = {
 		console.log("mediaSuccess");
 	},
     
-	_onError: function(error) {
-		var errorMessage = "code: " + error.code + "\n" +
-						   "message: " + error.message + "\n";
+	 _onError: function(error) {
+        var errorMessage;
+        
+        if(typeof error === "string") {
+           errorMessage = error;
+		} else {
+            errorMessage = "code: " + error.code + "\n" +
+                "message: " + error.message + "\n";
+		}
+          
 		this._showMessage(errorMessage);
-        this.isPlaying = false;
+		this.isPlaying = false;
 	},
     
     _onMediaStatusChanged: function(status) {

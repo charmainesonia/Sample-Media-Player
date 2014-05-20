@@ -72,9 +72,7 @@ MediaPlayer.prototype = {
 	},
     
     _onMediaStatusChanged: function(status) {
-        if(status === Media.MEDIA_STOPPED) {
-            this.mediaContent.release();
-        }  
+		console.log("Media status: " + status);
     },
     
 	_play: function() {

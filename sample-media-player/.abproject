@@ -49,5 +49,6 @@
   ],
   "Author": "",
   "Description": "sample-media-player",
-  "WP8Capabilities": []
+  "WP8Capabilities": [],
+  "Framework": "Cordova"
 }

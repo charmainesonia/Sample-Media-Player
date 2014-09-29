@@ -50,5 +50,10 @@
   "Author": "",
   "Description": "sample-media-player",
   "WP8Capabilities": [],
-  "Framework": "Cordova"
+  "Framework": "Cordova",
+  "CordovaPluginVariables": {
+    "com.telerik.mobiletesting": {
+      "IOS_APP_URL": ""
+    }
+  }
 }

@@ -3,7 +3,6 @@
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "AppIdentifier": "com.telerik.samplemediaplayer",
   "ProjectName": "sample-media-player",
-  "IsRunnable": "true",
   "AndroidPermissions": [
     "android.permission.CAMERA",
     "android.permission.VIBRATE",
@@ -33,7 +32,6 @@
   ],
   "AndroidVersionCode": "1",
   "AndroidHardwareAcceleration": "false",
-  "iOSBackgroundMode": [],
   "CorePlugins": [
     "org.apache.cordova.file",
     "org.apache.cordova.file-transfer",
@@ -49,7 +47,6 @@
   ],
   "Author": "",
   "Description": "sample-media-player",
-  "WP8Capabilities": [],
   "Framework": "Cordova",
   "CordovaPluginVariables": {
     "com.telerik.mobiletesting": {

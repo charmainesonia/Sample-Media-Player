@@ -99,6 +99,6 @@ MediaPlayer.prototype = {
     
 	_showMessage: function(text) {
 		var statusBox = document.getElementById('result');
-		statusBox.innerText = text;
+		statusBox.textContent = text;
 	}
 }

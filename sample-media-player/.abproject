@@ -40,9 +40,9 @@
 	"FrameworkVersion": "3.7.0",
 	"DisplayName": "Media-player",
 	"WP8SupportedResolutions": [
+		"ID_RESOLUTION_HD720P",
 		"ID_RESOLUTION_WVGA",
-		"ID_RESOLUTION_WXGA",
-		"ID_RESOLUTION_HD720P"
+		"ID_RESOLUTION_WXGA"
 	],
 	"Author": "",
 	"WP8Publisher": "",
@@ -57,5 +57,9 @@
 			"IOS_APP_URL": ""
 		}
 	},
-	"projectVersion": 1
+	"projectVersion": 1,
+	"WP8PublisherID": "{553ee2d5-7612-4331-a86c-7b2e525f7265}",
+	"WP8ProductID": "{c5bff381-5c92-4df1-94f9-96474a8f0d9d}",
+	"WP8PackageIdentityName": "1234Telerik.com.telerik.samplemediaplayer",
+	"WP8WindowsPublisherName": "CN=Telerik"
 }

@@ -1,0 +1,7 @@
+title: Media Player
+slug: sample-media-player
+page_title: Media Player | Apache Cordova Sample | Telerik Platform
+description: This sample shows you how to use the Media core Apache Cordova API to create a simple media player for audio files.
+tags: Apache Cordova, core, media player, audio, play, stop, pause, iOS, Android, Windows Phone
+publish: true
+content_filter: true

@@ -5,3 +5,4 @@ description: This sample shows you how to use the Media core Apache Cordova API 
 tags: Apache Cordova, core, media player, audio, play, stop, pause, iOS, Android, Windows Phone
 publish: true
 content_filter: true
+apis: cordova.media cordova.media.pause cordova.media.play cordova.media.release cordova.media.stop

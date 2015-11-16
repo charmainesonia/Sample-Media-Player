@@ -4,7 +4,6 @@ Media Player
 
 <a id="top"></a>
 * [Overview](#overview)
-* [Showcased APIs](#showcased-apis)
 * [Screenshots](#screenshots)
 * [Test the Sample](#test-the-sample)
 * [Limitations](#limitations)
@@ -14,17 +13,6 @@ This sample shows you how to use the Media API to create a simple media player w
 > *Supported mobile platforms:* iOS, Android, Windows Phone
 >
 > *Developed with:* Apache Cordova 3.7.0
-
-[Back to Top](#top)
-
-# Showcased APIs
-
-This sample shows how to use the following methods of the [Media API][Media API].
-
-* **play()**: Start or resumes playback.
-* **pause()**: Pauses playback.
-* **release()**: Releases the underlying audio resources of the operating system.
-* **stop()**: Stops playback.
 
 [Back to Top](#top)
 
@@ -153,4 +141,3 @@ You cannot run this sample in the device simulator in the in-browser client.
 [QR code]: http://docs.telerik.com/platform/appbuilder/testing-your-app/running-on-devices/deploy-remote
 [USB deploy]: http://docs.telerik.com/platform/appbuilder/testing-your-app/running-on-devices/running-on-connected-devices/deploy-connected
 [emulators]: http://docs.telerik.com/platform/appbuilder/testing-your-app/running-in-emulators/native-emulators
-[Media API]: https://www.npmjs.com/package/cordova-plugin-media

@@ -12,7 +12,7 @@ This sample shows you how to use the Media API to create a simple media player w
 
 > *Supported mobile platforms:* iOS, Android, Windows Phone
 >
-> *Developed with:* Windows Phone SDK 8.1, Apache Cordova 3.7.0
+> *Developed with:* Windows Phone SDK 8.1, Apache Cordova 4.0.0
 
 [Back to Top](#top)
 

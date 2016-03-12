@@ -30,14 +30,15 @@
 		"2"
 	],
 	"AndroidVersionCode": "1",
-	"AndroidHardwareAcceleration": "false",
+	"AndroidHardwareAcceleration": "true",
 	"CorePlugins": [
-		"org.apache.cordova.file",
-		"org.apache.cordova.file-transfer",
-		"org.apache.cordova.media",
-		"org.apache.cordova.splashscreen"
+		"cordova-plugin-file",
+		"cordova-plugin-file-transfer",
+		"cordova-plugin-media",
+		"cordova-plugin-splashscreen",
+		"cordova-plugin-whitelist"
 	],
-	"FrameworkVersion": "3.7.0",
+	"FrameworkVersion": "4.0.0",
 	"DisplayName": "Media-player",
 	"WP8SupportedResolutions": [
 		"ID_RESOLUTION_HD720P",

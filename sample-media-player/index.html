@@ -1,33 +1,70 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<title>Media Player</title>
-		<link rel="stylesheet" href="styles/main.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" href="styles/theme.css" />
+	<link href="styles/main.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta charset="utf-8">
+	<link href="bower_components/fontawesome/css/font-awesome.css" rel="stylesheet">
 
-		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-		<script type="text/javascript" src="scripts/main.js"></script>
-	</head>
-	<body>
-		<header class="header">
-			<h1>Player</h1>
-		</header>
-		<div class="content">
-            <div class="action-area ch50">
-                <button class="button dh" id="buttonPlayAudio">Play</button>
-			    <button class="button dh" id="buttonPauseAudio">Pause</button>
-			    <button class="button dh" id="buttonStopAudio">Stop</button>
-            </div>
-			<div class="result-area ch50">
-                <div class="results">
-                    <div id="result" class="desc"></div>
-                </div>
-            </div>
-			<div class="separator"></div>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h1>Media Player</h1>
+	</div>
+	<div class="content">
+		<div class="row">
+			<div class="col -width-33">
+				<img src="img/music.jpg" />
+			</div>
+			<div class="col songInfo">
+				<div class="row">
+					<div class="col u-text-right -width-40">
+						<label class="u-text-bold">Song: </label>
+					</div>
+					<div class="col u-text-left">
+						<span class="u-color-accent">Layered Guitars</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col u-text-right -width-40">
+						<label class="u-text-bold">Artist: </label>
+					</div>
+					<div class="col u-text-left">
+						<span class="u-color-accent">j1s</span>
+					</div>
+				</div>
+			</div>
 		</div>
-		<footer class="footer">
-			<div>Cordova API Samples</div>
-		</footer>
-	</body>
+		<div class="row -expanded -align-center">
+			<div class="col u-text-center">
+				<span id="result" class="u-color-accent"></span>
+			</div>
+		</div>
+	</div>
+	<div class="subfooter">
+		<div class="row">
+			<div class="col -text-right">
+				<button class="button button--rounded" id="buttonPlayAudio">
+					<i class="fa fa-play"></i>
+				</button>
+			</div>
+			<div class="col -text-center -width-25">
+				<button class="button button--rounded" id="buttonPauseAudio">
+					<i class="fa fa-pause"></i>
+				</button>
+			</div>
+			<div class="col -text-left">
+				<button class="button button--rounded" id="buttonStopAudio">
+					<i class="fa fa-stop"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<span>Feature Examples</span>
+	</div>
+</body>
 </html>

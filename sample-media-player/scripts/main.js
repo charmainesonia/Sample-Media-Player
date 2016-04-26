@@ -19,7 +19,7 @@ MediaPlayer.prototype = {
     
 	run: function() {
 		var that = this,
-            src = "http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3";
+            src = "http://audio.ibeat.org/?ccm=/download/p1rj1s/878";
 		    
         
 		var playAudioButton = document.getElementById("buttonPlayAudio"),
@@ -75,23 +75,28 @@ MediaPlayer.prototype = {
 		console.log("Media status: " + status);
     },
     
-	_play: function() {
-        if(this.isPlaying === false) {
+	_play: function(args) {
+	    if (this.isPlaying === false) {
+	        document.getElementById("buttonStopAudio").classList.remove("stop");
+	        args.currentTarget.classList.add("play");
             this.mediaContent.play();
 		    this._showMessage('Playing...');
 		    this.isPlaying = true;
         }
 	},
     
-	_pause: function () {
-		if(this.isPlaying === true) {
+	_pause: function (args) {
+	    if (this.isPlaying === true) {
+	        document.getElementById("buttonPlayAudio").classList.remove("play");
             this.mediaContent.pause();
     		this._showMessage('Paused');
             this.isPlaying = false;
         }
 	},
     
-	_stop: function () {
+	_stop: function (args) {
+        document.getElementById("buttonPlayAudio").classList.remove("play");
+	    args.currentTarget.classList.add("stop");
         this.mediaContent.stop();
 		this._showMessage('');
 		this.isPlaying = false;

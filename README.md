@@ -1,6 +1,6 @@
 Media Player
 ===================
-<a href="https://platform.telerik.com/#appbuilder/clone/https%3A%2F%2Fgithub.com%2FIcenium%2Fsample-media-player" target="_blank"><img src="http://docs.telerik.com/platform/samples/images/try-in-appbuilder.png" alt="Try in AppBuilder" title="Try in AppBuilder" /></a>  
+<a href="https://platform.telerik.com/#appbuilder/clone/https%3A%2F%2Fgithub.com%2FIcenium%2Fsample-media-player" target="_blank"><img src="http://docs.telerik.com/platform/samples/images/try-in-appbuilder.png" alt="Try in the Platform" title="Try in the Platform" /></a>  
 
 <a id="top"></a>
 * [Overview](#overview)
@@ -10,9 +10,9 @@ Media Player
 
 This sample shows you how to use the Media API to create a simple media player which plays an audio file from the Internet.
 
-> *Supported mobile platforms:* iOS, Android, Windows Phone
+> *Supported mobile platforms:* iOS 7.1+, Android 4.4+, Windows Phone 8.1+
 >
-> *Developed with:* Windows Phone SDK 8.1, Apache Cordova 4.0.0
+> *Developed with:* Windows Phone SDK 8.1, Apache Cordova 4.0.0, Font Awesome 4.5.0
 
 [Back to Top](#top)
 
@@ -20,7 +20,7 @@ This sample shows you how to use the Media API to create a simple media player w
 
 Platform | Home
 ---|---
-All | ![](https://raw.githubusercontent.com/Icenium/sample-media-player/master/screenshots/home.jpg)
+All | ![](screenshots/home.png)
 
 [Back to Top](#top)
 

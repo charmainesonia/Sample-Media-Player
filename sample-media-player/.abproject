@@ -40,11 +40,6 @@
 	"WP8Requirements": [],
 	"Description": "sample-media-player",
 	"Framework": "Cordova",
-	"CordovaPluginVariables": {
-		"com.telerik.mobiletesting": {
-			"IOS_APP_URL": ""
-		}
-	},
 	"projectVersion": 1,
 	"WP8PublisherID": "{553ee2d5-7612-4331-a86c-7b2e525f7265}",
 	"WP8ProductID": "{c5bff381-5c92-4df1-94f9-96474a8f0d9d}",

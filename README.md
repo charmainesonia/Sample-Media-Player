@@ -20,7 +20,7 @@ This sample shows you how to use the Media API to create a simple media player w
 
 Platform | Home
 ---|---
-All | ![](screenshots/home.png)
+All | ![](https://raw.githubusercontent.com/Icenium/Sample-Media-Player/master/screenshots/home.png)
 
 [Back to Top](#top)
 

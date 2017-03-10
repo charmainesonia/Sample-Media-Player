@@ -25,7 +25,7 @@
 		"cordova-plugin-splashscreen",
 		"cordova-plugin-whitelist"
 	],
-	"FrameworkVersion": "4.0.0",
+	"FrameworkVersion": "6.4.0",
 	"DisplayName": "Media-player",
 	"WP8SupportedResolutions": [
 		"ID_RESOLUTION_HD720P",

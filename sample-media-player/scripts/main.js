@@ -19,7 +19,7 @@ MediaPlayer.prototype = {
     
 	run: function() {
 		var that = this,
-            src = "http://audio.ibeat.org/?ccm=/download/p1rj1s/878";
+            src = "https://archive.org/download/GUNSMOKE05/Gunsmoke_59-01-18_Kangaroo.mp3";
 		    
         
 		var playAudioButton = document.getElementById("buttonPlayAudio"),
